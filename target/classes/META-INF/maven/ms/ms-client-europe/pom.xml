@@ -46,6 +46,23 @@
         	<artifactId>spring-cloud-starter-config</artifactId>
     	</dependency>
     	    		
+    <!-- Spring submodule that produces non functional requirements/metrics  
+		 It adds several production grade services to your application with little effort on your part.
+		 https://spring.io/guides/gs/actuator-service/
+		 
+		 call them by:
+		 http://localhost:10012/autoconfig
+		 http://localhost:10012/health
+		 http://localhost:10012/configprops
+		 http://localhost:10012/beans
+		 http://localhost:10012/info
+		 http://localhost:10012/mappings
+	-->
+	<dependency>
+	    <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot-starter-actuator</artifactId>
+	</dependency>
+	    		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
